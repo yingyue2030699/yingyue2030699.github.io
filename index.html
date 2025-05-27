@@ -20,24 +20,6 @@
       padding-bottom: 0.2rem;
     }
 
-    img.figure {
-      max-width: 100%;
-      height: auto;
-      margin: 1rem 0;
-      border: 1px solid #888;
-    }
-
-    figure {
-      text-align: center;
-      margin: 2rem 0;
-    }
-
-    figcaption {
-      font-size: 0.9rem;
-      color: #555;
-      margin-top: 0.5rem;
-    }
-
     a {
       color: #003366;
       text-decoration: none;
@@ -51,6 +33,22 @@
       margin-bottom: 2rem;
     }
 
+    .reference {
+      margin: 1rem 0;
+    }
+
+    .reference a {
+      font-size: 0.95rem;
+    }
+
+    .reference .authors {
+      font-weight: normal;
+    }
+
+    .reference .authors b {
+      font-weight: bold;
+    }
+
     footer {
       font-size: 0.8rem;
       color: #777;
@@ -61,52 +59,70 @@
 </head>
 <body>
 
-  <h1>Your Name</h1>
+  <h1>Yue "Moon" Ying</h1>
   <nav>
     <a href="#about">About</a> |
     <a href="#research">Research</a> |
-    <a href="#figures">Figures</a> |
-    <a href="#contact">Contact</a>
+    <a href="#publications">Publications</a>|
+    <a href="#side_projects">Side Projects</a>|
+    <a href="#contact">Contact</a> 
   </nav>
 
   <section id="about">
     <h2>About</h2>
+    <p><a href="YMYING_CV.pdf" download>Download CV (PDF)</a></p>
     <p>
-      I am a researcher in [your field] at [your institution]. My work focuses on [brief description].
-      This website summarizes some of my past and ongoing projects in biophysics, modeling, and computation.
+      I am a researcher in Chemical and Biomolecular Engineering at Johns Hopkins.
+      This website summarizes some of my past and ongoing projects in biochemistry, biophysics, modeling, and computation.
     </p>
   </section>
 
   <section id="research">
     <h2>Research Interests</h2>
     <ul>
-      <li>Membrane mechanics and shape modeling</li>
-      <li>Protein-lipid interactions and self-assembly</li>
-      <li>Non-equilibrium reaction-diffusion systems</li>
-      <li>High-performance simulation tools (e.g., NERDSS)</li>
+      <li>Membrane mechanics and dynamics modeling</li>
+      <li>Protein self-assembly coupled with lipid membrane</li>
+      <li>Non-equilibrium reaction-diffusion systems with High-performance simulation tools (<a href="https:mjohn218.github.io/NERDSS">NERDSS</a>)</li>
     </ul>
   </section>
 
-  <section id="figures">
-    <h2>Selected Figures</h2>
+  <section id="publications">
+    <h2>Publications</h2>
 
-    <figure>
-      <img src="fig1.png" alt="Sample figure" class="figure">
-      <figcaption>Figure 1. Simulated curvature profile under self-assembled scaffolds.</figcaption>
-    </figure>
+    <div class="reference">
+      <span class="authors">Guo, S., Korolija, N., Milfeld, K., Jhaveri, A., Sang, M., Ying, Y., Johnson, M.E. (2025).</span><br>
+      <a href="https://doi.org/10.1002/jcc.70132" target="_blank">
+        Parallelization of particle-based reaction diffusion simulations using MPI. J. Comput. Chem., 46, e70132.
+      </a>
+    </div>
 
-    <figure>
-      <img src="fig2.png" alt="Sample figure" class="figure">
-      <figcaption>Figure 2. Energy landscape of membrane deformation versus protein density.</figcaption>
-    </figure>
+    <div class="reference">
+      <span class="authors">da Silveira, W.A., Fazelinia, H., Rosenthal, S.B., Laiakis, E.C., Kim, M.S., Meydan, C., Kidane, Y., Rathi, K.S., Smith, S.M., Stear, B., <b>Ying, Y.</b>, et al. (2020).</span><br>
+      <a href="https://doi.org/10.1016/j.cell.2020.11.002" target="_blank">
+        Comprehensive Multi-omics Analysis Reveals Mitochondrial Stress as a Central Biological Hub for Spaceflight Impact. Cell 183, 1185-1201.e20.
+      </a>
+    </div>
 
-    <!-- Add more figures here -->
-  </section>
+    <!-- Add more references as needed -->
+  </section id="side_projects">
+    <h2>Spin-offs</h2>
+
+    <div class="reference">
+      <a href="https://github.com/yingyue2030699/Reaction-System-Solver">Reaction IVP solver</a>
+      Provides a set of functions for working with chemical reaction systems, including parsing reaction strings, solving reaction kinetics, and modifying reaction rates.
+    </div>
+
+    <div class="reference">
+      <a href="https://github.com/yingyue2030699/Scheduling">Complex Scheduling</a>
+      A quick example of how to schedule a set of tasks with precedence constraints across multiple bins (e.g., workers or machines), using the OR-Tools CP-SAT solver. The goal is to minimize the overall makespan — the total time required to complete all tasks.
+    </div>
+  
+  <section>
 
   <section id="contact">
     <h2>Contact</h2>
-    <p>Email: <a href="mailto:your.email@university.edu">your.email@university.edu</a></p>
-    <p>GitHub: <a href="https://github.com/yourusername">yourusername</a></p>
+    <p>Email: <a href="mailto:yying7@jh.edu">yying7@jh.edu</a></p>
+    <p>GitHub: <a href="https://github.com/yingyue2030699">yingyue2030699</a></p>
   </section>
 
   <footer>
